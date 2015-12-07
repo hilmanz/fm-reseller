@@ -1,0 +1,1 @@
+ALTER TABLE `fantasy`.`vouchers`     ADD COLUMN `batch_id` INT(11) DEFAULT '0' NULL AFTER `paid_plan`;
