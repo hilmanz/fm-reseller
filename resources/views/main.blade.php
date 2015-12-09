@@ -31,8 +31,8 @@
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                   <li><a href="{{url('')}}">Dashboard</a></li>
-                  <li><a href="#">Generate Voucher</a></li>
-                  <li><a href="#">Report</a></li>
+                  <li><a href="#">Panduan</a></li>
+                  
                   <li role="separator" class="divider"></li>
                   <li><a href="{{url('reseller/profile')}}">Profile</a></li>
                   <li><a href="{{url('reseller/logout')}}">Logout</a></li>

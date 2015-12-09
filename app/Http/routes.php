@@ -11,4 +11,14 @@
 |
 */
 
-Route::get('/', 'ResellerController@dashboard');
+
+Route::group(['middleware' => 'reseller.session'], function () {
+    Route::get('/', 'ResellerController@dashboard');
+
+    
+});
+Route::post('/login', 'ResellerController@auth');
+Route::get('/login', 'ResellerController@login');
+
+Route::get('/register', 'RegisterController@form');
+Route::post('/register', 'RegisterController@submit');

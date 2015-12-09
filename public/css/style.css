@@ -75,3 +75,30 @@ input.btn.btn-danger {
 .searchbox input[type="text"] {
   margin-top: 21px;
 }
+.form-signin{
+  width:400px;
+}
+
+.panel {
+  max-width: 650px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 20px;
+
+}
+.panel > div{
+  text-align: center;
+  margin-top:20px;
+}
+span.tips {
+  border: 1px solid white;
+  border-radius: 83px;
+  /* width: 20px; */
+  /* height: 20px; */
+  font-size: 13px;
+  padding: 0px 6px 1px 6px;
+  margin-top: -4px;
+  display: inline;
+  position: relative;
+}
