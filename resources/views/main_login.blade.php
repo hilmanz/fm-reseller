@@ -19,15 +19,15 @@
     <![endif]-->
 
   </head>
-  <body>
+  <body id="loginpage">
     <section class="header">
       <div class="container">
         <div class="row">
             <div class="col-md-12">
-              
+
             </div>
         </div>
-        
+
       </div>
     </section>
     @yield('content')
@@ -36,7 +36,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{url('bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
     <script src="{{url('bower_components/knockout/dist/knockout.js')}}"></script>
-    
-    
+
+
   </body>
 </html>

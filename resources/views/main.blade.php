@@ -32,16 +32,17 @@
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                   <li><a href="{{url('')}}">Dashboard</a></li>
                   <li><a href="#">Panduan</a></li>
-                  
+
                   <li role="separator" class="divider"></li>
                   <li><a href="{{url('reseller/profile')}}">Profile</a></li>
                   <li><a href="{{url('reseller/logout')}}">Logout</a></li>
 
                 </ul>
               </div>
+              <a href="{{url('')}}" class="logo">&nbsp;</a>
             </div>
         </div>
-        
+
       </div>
     </section>
     @yield('content')
@@ -50,7 +51,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{url('bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
     <script src="{{url('bower_components/knockout/dist/knockout.js')}}"></script>
-    
-    
+
+
   </body>
 </html>

@@ -1,7 +1,27 @@
+body{
+  background: url(../images/bg-image.jpg) no-repeat #c20101;
+  background-size: cover;
+}
+a{
+  color: #c20101;
+}
 section.header {
-  background: #c20101;
+  background:url(../images/top-nav-bg.png) repeat-x #c20101;
   padding: 10px 0px;
   border-bottom: 4px solid black;
+}
+.dropdown, .dropup{
+  float: left;
+}
+.logo{
+  background: url(../images/logo.png) no-repeat;
+  background-size: cover;
+  width: 255px;
+  height: 50px;
+  display: block;
+  z-index: 3;
+  float: right;
+  text-decoration: none;
 }
 label {
   display: block;
@@ -31,36 +51,49 @@ input.btn.btn-danger {
    margin-top:20px;
    margin-bottom:20px;
 }
+.btn{
+  border: none;
+  padding: 6px 15px;
+}
 .box {
-  border: 1px solid #ccc;
+  border: 5px solid #000;
   height: 150px;
   padding: 20px;
-  border-radius: 20px;
-  margin-top: 20px;
-  color:white;
-  background:#c20101;
+  border-radius: 8px;
+  color: white;
+  background: #c20101;
+  margin: 0 0 30px 0;
+  text-align: center;
 }
 .box h1 {
-  font-size: 20px;
-  
-
+  font-size: 15px;
   text-align: center;
-  margin:0;
+  font-weight: normal;
+  text-transform: uppercase;
+  margin:20px 0 5px 0;
+  color: #ffd4d4;
 }
 .box h4 {
-  font-size: 24px;
+  font-size: 30px;
   margin: 0;
   text-align: center;
-  margin-top: 30px;
   font-weight: 700;
+  display: inline-block;
+  position: relative;
 }
-
+#content{
+  padding: 40px 0;
+}
 .topBorder{
-  border-top:1px solid #ccc;
-  margin-top:20px;
-  padding-top:20px;
+  border-top: 1px solid #ccc;
+  background: #f2f2f2;
+  padding: 30px;
 }
-
+.topBorder h3{
+  border-bottom: solid 1px #000;
+  padding: 0 0 10px 0;
+  margin: 0 0 20px 0;
+}
 .btn-info{
   background:black;
   color:yellow;
@@ -75,10 +108,71 @@ input.btn.btn-danger {
 .searchbox input[type="text"] {
   margin-top: 21px;
 }
+.form-signin-heading{
+  background: #c20101;
+  color: #fff;
+  margin: 0 0 20px 0;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+}
 .form-signin{
   width:400px;
+  margin:50px auto;
+  border: solid 5px #c20101;
+  color: #c20101;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
 }
+.form-signin button.btn{
+  background: none;
+  color: #c20101;
+  border: solid 5px #c20101;
+  padding: 0;
+  line-height: 40px;
+  padding: 0 30px;
+  font-size: 14px;
+  display: inline-block;
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  width: auto;
+  margin: 0 0 20px 0;
+}
+.form-signin input[type='text'],.form-signin input[type='password']{
+  background: #333;
+  color: #fff;
+  padding:0 10px;
+  height: 40px; line-height: 40px;
+  border-radius: 0;
+  border: none;
+  margin: 0 0 20px 0;
+}
+.form-signin p{
+  color: #333;
+  margin: 0;
+  font-size: 12px;
+}
+.form-signin p a{
+}
+margin: 0 auto;
+background: #c00;
+color: #fff;
+padding: 20px;
 
+.form-signin button.btn{
+  background: #c00;
+  background: none;
+  color: #c00;
+  border: solid 2px #c00;
+  padding: 0;
+  line-height: 40px;
+  padding: 0 30px;
+  font-size: 20px;
+  display: inline-block;
+}
 .panel {
   max-width: 650px;
   margin: 20px auto;
@@ -93,12 +187,68 @@ input.btn.btn-danger {
 }
 span.tips {
   border: 1px solid white;
-  border-radius: 83px;
-  /* width: 20px; */
-  /* height: 20px; */
+  border-radius: 100px;
   font-size: 13px;
-  padding: 0px 6px 1px 6px;
-  margin-top: -4px;
-  display: inline;
-  position: relative;
+  width: 20px; height: 20px;
+  display: inline-block;
+  line-height: 20px;
+  text-align: center;
+  position: absolute;
+  right: -20px;
+  top: -4px;
 }
+.dataTable {
+  margin: 1em 0;
+  min-width: 300px;
+}
+.dataTable th {
+  display: none;
+}
+.dataTable td {
+  display: block;
+}
+.dataTable td:first-child {
+  padding-top: .5em;
+}
+.dataTable td:last-child {
+  padding-bottom: .5em;
+}
+.dataTable td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  .dataTable td:before {
+    display: none;
+  }
+}
+.dataTable th, .dataTable td {
+  text-align: left;
+}
+@media (min-width: 480px) {
+  .dataTable th, .dataTable td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .dataTable th:first-child, .dataTable td:first-child {
+    padding-left: 0;
+  }
+  .dataTable th:last-child, .dataTable td:last-child {
+    padding-right: 0;
+  }
+}
+.dataTable {
+  overflow: hidden;
+}
+@media (min-width: 480px) {
+  .dataTable th, .dataTable td {
+    padding: 1em !important;
+  }
+}
+.dataTable th, .dataTable td:before {
+  color: #333;
+}
+tr:nth-child(odd) td		{ background-color:#eee; }
+tr:nth-child(even)td	{ background-color:#fff; }
