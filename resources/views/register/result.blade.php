@@ -1,29 +1,45 @@
 @extends('main_login')
 @section('content')
-<section id="content">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="panel">
-			@if($status==0)
-				@if (count($errors) > 0)
-				    <div class="alert alert-danger">
-				        <ul>
-				            @foreach ($errors->all() as $error)
-				                <li>{{ $error }}</li>
-				            @endforeach
-				        </ul>
-				    </div>
-				@else
-					{!!$msg!!}
-				@endif
-			@else
-				{!!$msg!!}
-			@endif
+
+<div class="section">
+    <div class="container">
+      <div class="paralax section1">
+        <div class="img">
+          <img src="{{url('images/Iei-2.jpg')}}" alt="" />
+        </div>
+      </div>
+      <div class="paralax section2">
+        <div class="col-md-6">
+          <div class="entry-left">
+            <div class="panel">
+					@if($status==0)
+						@if (count($errors) > 0)
+						    <div class="alert alert-danger">
+						        <ul>
+						            @foreach ($errors->all() as $error)
+						                <li>{{ $error }}</li>
+						            @endforeach
+						        </ul>
+						    </div>
+						@else
+							{!!$msg!!}
+						@endif
+					@else
+						{!!$msg!!}
+					@endif
 				<div>
-					<a href="{{url('login')}}" class="btn btn-info">Lanjut</a>
+					<a href="{{url('login')}}" class="button">Lanjut</a>
 				</div>
 			</div>
-		</div>
-	</div>
-</section>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img fr">
+            
+          </div>
+        </div>
+      </div>
+    </div><!-- end .container -->
+</div>
+
 @endsection

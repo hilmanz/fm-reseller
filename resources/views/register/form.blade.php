@@ -1,11 +1,19 @@
-@extends('main_login')
+@extends('main')
 @section('content')
-
-<section id="registration">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8">
-				<form action="{{url('register')}}" method="post">
+<div class="section">
+    <div class="container">
+      <div class="paralax section1">
+        <div class="img">
+        	<?php
+        	$images = ['banner1.jpg','banner2.jpg'];
+        	?>
+          <img src="{{url('images/'.$images[rand(0,1)])}}" alt="" />
+        </div>
+      </div>
+      <div class="paralax section2">
+        <div class="col-md-6">
+          <div class="entry-left">
+           <form action="{{url('register')}}" method="post">
 					<h3>Pendaftaran</h3>
 					<p>Isi form dibawah ini dengan lengkap</p>
 					@if (count($errors) > 0)
@@ -59,13 +67,17 @@
 						Password
 					</label>
 					<input type="password" name="password" value=""/>
-					<input type="submit" name="btn" value="DAFTAR" class="btn btn-info"/>
+					<input type="submit" name="btn" value="DAFTAR" class="button"/>
 				</form>
-			</div>
-			<div class="col-md-4">
-				<p></p>
-			</div>
-		</div>
-	</div>
-</section>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img fr">
+           
+          </div>
+        </div>
+      </div>
+    </div><!-- end .container -->
+</div>
+
 @endsection

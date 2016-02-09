@@ -1,9 +1,17 @@
 @extends('main')
 @section('content')
-<section id="content">
-	<div class="container">
-
-		<div class="row">
+<div class="section">
+    <div class="container">
+      <div class="paralax section1">
+        <div class="img">
+           <?php
+        	$images = ['banner1.jpg','banner2.jpg'];
+        	?>
+          <img src="{{url('images/'.$images[rand(0,1)])}}" alt="" />
+        </div>
+      </div>
+      <div class="paralax section2">
+        <div class="row">
 			<div class="col-md-4">
 				<div class="box">
 					<h1>Referral Code</h1>
@@ -27,7 +35,6 @@
 
 
 		</div>
-
 		<div class="row">
 			<div class="col-md-12">
 				<div class="topBorder">
@@ -94,9 +101,11 @@
 				</div>
 			</div>
 		</div>
-	</div>
+        
+      </div>
+    </div><!-- end .container -->
+</div>
 
-</section>
 <script>
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()

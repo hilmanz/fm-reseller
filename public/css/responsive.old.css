@@ -1,0 +1,112 @@
+.slicknav_menu,#navmobile{
+	display:none;
+}
+@media (max-width: 1360px;) {
+	.container{ width:90%; margin:0 auto;}
+} 
+@media only screen and (max-width: 960px) {
+}
+@media only screen and (max-width: 800px) {
+	#menu{ display:none;}
+	.slicknav_menu{
+		display:block;
+		background:none;
+		text-align:center;
+	}
+	#navmobile{ display:block; position: relative; z-index: 100; margin: 0 0 0 0; position: absolute; right: 0; top: 0;}
+	.slicknav_nav a.logohead{ display:none;}
+	.slicknav_btn{ background:none; display:inline-block; padding:0; float:none; margin:0 0 0 0; height:40px;}
+	.slicknav_menu .slicknav_icon-bar{
+		background:#7e4f25;
+		margin:5px 0;
+		width:40px; height:5px; border-radius:5px;
+	}
+	.slicknav_nav a,.slicknav_nav .slicknav_row:hover{
+		background:#76b729;
+		line-height:50px;
+		height: 50px;
+		color:#fff;
+		font-weight:normal;
+		text-transform:uppercase;
+		font-size:20px;
+		text-align:left;
+		padding:5px 20px;
+		border-radius:0;
+	}
+	.slicknav_nav .slicknav_row{ padding:0 20px;}
+	.slicknav_nav ul{ margin:0;}
+	.slicknav_nav ul a{
+		background:#9e1518;
+	}
+	.slicknav_nav a span{
+		display:inline-block;
+		line-height: 50px;
+	}
+	.slicknav_nav a img{
+		width: 50px; top: -11px;
+		position: relative;
+		margin: 0 10px 0 0;
+	}
+	.quoteContent h3{
+		font-size: 12px;
+	}
+	#footer li a{
+		padding: 0 15px;	
+	}
+	.box{
+		margin: 0 0 40px 0;
+	}
+	.the-title,.center-title{
+		font-size: 16px;
+	}
+	.box .thumb{
+		top: auto;
+		margin: 20px auto;
+	}
+}
+@media (max-width: 600px) {
+	#quote{
+		position: inherit;
+	}
+	.quoteContent h3{
+		padding: 10px;
+		line-height: 20px;
+	}
+	#slider .container{
+		padding: 0;
+	}
+	.logo a{
+		width: 180px; height: auto;
+	}
+	.owl-controls{
+		display: none !important;
+	}
+	.entry{
+		padding: 20px 0;
+	}
+	#top{
+		padding: 10px 0;
+		text-align: center;
+		height: 50px;
+	}
+	#top p{
+		line-height: 16px;
+		text-align: center;
+	}
+	#header{
+		top: 50px;
+	}
+}
+@media (max-width: 375px){
+	#footer li{
+		display: block;
+		text-align: left;
+	}
+	#footer li a{
+		padding: 0;
+	}
+	.page-title{
+		border-top: solid 2px #754c24;
+		margin: 30px 0;
+	}
+}
